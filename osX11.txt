@@ -1,0 +1,36 @@
+uname -a
+lsb_release -a
+
+
+Linux TV1-K-033 6.8.0-48-generic #48~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Oct  7 11:24:13 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 22.04.4 LTS
+Release:        22.04
+Codename:       jammy
+
+
+Ubuntu 22.04.4 LTS
+gnome 42.9
+X.Org version: 1.21.1.4
+
+cpu:
+AMD® Ryzen 5 2600 six-core processor
+
+/////////////
+qt installation:
+qt6.4 (long time ago)
+qt-everywere6.4.0 (all in one)
+quite sure it was:
+'configure && make && make install'
+
+
+/*
+// having trouble with
+// qt.qpa.plugin: Could not find the Qt platform plugin "xcb" in ""
+// commit to repo but not tested 6.8 now
+
+
+qt6.8 same as wayland
+-> only qtbase
+*/

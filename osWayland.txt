@@ -29,6 +29,6 @@ build it step by step
 with (installed)qtbase/bin/qt-configure-modules
 
 used commands:
- ../configure -nomake examples -nomake tests -debug -opensource -confirm-license -prefix /opt/Qt6 // for base
+../configure -nomake examples -nomake tests -debug -opensource -confirm-license -prefix /opt/Qt6 // for base
 mkdir build && cd build && /opt/Qt64/bin/qt-configure-module ..  // for modules
 
