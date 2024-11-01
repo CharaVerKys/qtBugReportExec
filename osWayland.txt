@@ -1,0 +1,34 @@
+uname -a
+lsb_release -a
+
+Linux laptop 6.1.0-25-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.106-3 (2024-08-26) x86_64 GNU/Linux
+No LSB modules are available.
+Distributor ID: Debian
+Description:    Debian GNU/Linux 12 (bookworm)
+Release:        12
+Codename:       bookworm
+
+
+plasmashell 5.27.5
+kwin 5.27.5
+kde qt version 5.15.8
+kde framework version 5.103.0
+
+
+cpu:
+Intel® Pentium® Gold 7505 @ 2.00GHz
+
+////////////////////////////
+qt installation:
+same for qt6.4 and qt6.8
+
+from https://download.qt.io/archive/qt/6.*
+download qtbase qtcharts qtsvg qtwayland (also unused qtdeclarative for 6.8)
+build it step by step
+-> qtbase, (qtdeclaretive), qtcharts, qtsvg, qtwayland in approximate order
+with (installed)qtbase/bin/qt-configure-modules
+
+used commands:
+ ../configure -nomake examples -nomake tests -debug -opensource -confirm-license -prefix /opt/Qt6 // for base
+mkdir build && cd build && /opt/Qt64/bin/qt-configure-module ..  // for modules
+
